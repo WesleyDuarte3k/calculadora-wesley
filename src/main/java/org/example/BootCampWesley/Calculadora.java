@@ -6,6 +6,8 @@ public class Calculadora {
 
 	public Integer soma(List<Integer> numeros) {
 		return numeros.stream().
-			reduce(0, (acumulador, numero) -> (acumulador + numero));
+			reduce(0, (acumulador, numero) -> {
+				return (acumulador + numero);
+			});
 	}
 }
